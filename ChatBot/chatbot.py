@@ -14,7 +14,7 @@ def remove_escape_sequence_from_beg_end(completion: str) -> str:
 def get_completion(prompt: str) -> str:
     response = openai.Completion.create(
         engine="text-davinci-003",
-        prompt=f"Answer this as an Psychatrist: {prompt}",
+        prompt=f"Answer this as an Psychiatrist: {prompt}",
         temperature=0.4,
         max_tokens=100,
     )
